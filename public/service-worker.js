@@ -3,6 +3,7 @@ const VERSION = 'v1';
 const CACHE_NAME = `${APP_PREFIX}${VERSION}`;
 const DATA_CACHE = `data-cache-${VERSION}`;
 
+//cached files
 const FILES_TO_CACHE = [
     '/',
     './index.html',
@@ -19,6 +20,7 @@ const FILES_TO_CACHE = [
     'icon-512x512.png'
 ]
 
+// 'self' refers to service worker object
 self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(CACHE_NAME)
@@ -28,7 +30,7 @@ self.addEventListener('install', event => {
         })
     )
 })
-
+// Fetch request for service worker
 self.addEventListener('fetch', event => {
     if(event.request.url.includes('/api/')) {
         event.respondWith(
@@ -64,7 +66,7 @@ self.addEventListener('fetch', event => {
         })
     )
 })
-
+// adding activate for service worker
 self.addEventListener('activate', event => {
     event.waitUntil(caches.keys().then(keylist => {
         let cacheKeepList =  keylist.filter(key => key.indexOf(APP_PREFIX))

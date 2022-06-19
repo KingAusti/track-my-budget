@@ -1,6 +1,4 @@
 {
-    "name": "budgetApp",
-    "short_name": "budgetApp",    
     "icons": [        
         {
             "source": "icons/icon-72x72.png",
@@ -43,6 +41,8 @@
             "type": "image/png"
         }    
     ],
+    "name": "budgetApp",
+    "short_name": "budgetApp",        
     "theme_color": "#006E33",
     "background_color": "#77DD77",
     "start_url": "/",

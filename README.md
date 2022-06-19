@@ -5,7 +5,7 @@ I WANT to be able to track my withdrawals and deposits with or without a data/in
 SO THAT my account balance is accurate when I am traveling 
 
 ## Table of Contents 
-------
+---
 
 * [Installation](#installation)
 
@@ -13,9 +13,8 @@ SO THAT my account balance is accurate when I am traveling
 
 * [Live Link](#live)
 
-
 * [Author](#author)
-KingAusti
+
 ## Installation
 1. Clone repository using 'git clone"
 2. Install necessary dependencies, run the following command: <br> 'npm install'
@@ -34,7 +33,7 @@ This a project was built using <br>
 [Deployed Application](https://kingausti-track-my-budget.herokuapp.com/) <br>
 ![budget tracker](./public/images/app-screen-shot.png)
 ## Author 
-KingAusti
+[KingAusti](https://github.com/KingAusti)
 
 ## SPECIFICATIONS
 GIVEN a budget tracker without an internet connection
